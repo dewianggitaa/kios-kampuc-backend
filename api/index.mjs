@@ -28,5 +28,5 @@ app.get("/", (req, res) => {
     return res.send("hola juga");
 });
 
-export default app;
+export default (req, res) => app(req, res)
 
