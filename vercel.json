@@ -5,5 +5,11 @@
             "src":"api/index.mjs", 
             "use": "@vercel/node"
         }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
     ]
 }
